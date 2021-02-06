@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Login from './pages/Login/Login';
 import { getTokenFromUrl } from './spotify';
 import './App.css';
@@ -22,12 +22,14 @@ function App() {
 
 			spotify.setAccessToken(_token);
 
-			spotify.getMe().then(user => {
-				console.log('person', user);
-				dispatch({ type: 'SET_USER', user });
+			spotify.getMe().then(_user => {
+				console.log('person', _user);
+				dispatch({ type: 'SET_USER', user: _user });
 			});
 		}
-	}, []);
+	}, [dispatch]);
+
+	console.log(user);
 
 	return (
 		<div className="app">
