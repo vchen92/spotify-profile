@@ -1,0 +1,30 @@
+.playerHeader {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.playerHeader__left {
+	flex: 0.5;
+	min-width: 70px;
+	background-color: white;
+	color: gray;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.playerHeader__left > input {
+	border: none;
+	width: 100%;
+}
+
+.playerHeader__right {
+	display: flex;
+	align-items: center;
+}
+
+.playerHeader__right > h4 {
+	margin-left: 10px;
+}

@@ -1,10 +1,11 @@
 import React from 'react';
 import './PlayerContent.css';
+import PlayerHeader from './../PlayerHeader/PlayerHeader';
 
-function PlayerContent() {
+function PlayerContent({ spotify }) {
 	return (
 		<div className="playerContent">
-			<h1>I am player content</h1>
+			<PlayerHeader />
 		</div>
 	);
 }
