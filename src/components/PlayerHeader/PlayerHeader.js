@@ -5,7 +5,7 @@ import './PlayerHeader.css';
 import { useDataLayerValue } from './../../hoc/DataLayer/DataLayer';
 
 function PlayerHeader() {
-	const [{ user }, dispatch] = useDataLayerValue();
+	const [{ user }] = useDataLayerValue();
 
 	return (
 		<div className="playerHeader">

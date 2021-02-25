@@ -8,11 +8,11 @@ function Player({ spotify }) {
 	return (
 		<div className="player">
 			<div className="player__body">
-				<Sidebar />
+				<Sidebar spotify={spotify} />
 				<PlayerContent spotify={spotify} />
 			</div>
 
-			<PlayerControls />
+			<PlayerControls spotify={spotify} />
 		</div>
 	);
 }
