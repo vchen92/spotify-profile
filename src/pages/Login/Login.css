@@ -5,8 +5,8 @@
 	background-color: black;
 }
 
-.login img {
-	width: 100%;
+.login > img {
+	height: 200px;
 }
 
 .login > a {
